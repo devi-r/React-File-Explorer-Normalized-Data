@@ -2,6 +2,10 @@
 
 A responsive and interactive file explorer component built with React. This application provides a dual-pane interface with a navigation tree on the left and a content grid on the right, allowing for seamless file and folder browsing.
 
+## Demo
+
+Live Preview: https://react-file-explorer-normalized-data.onrender.com
+
 ## Features
 
 - **Dual View Interface**: A synchronized tree view in the sidebar and a grid view for the main content.
