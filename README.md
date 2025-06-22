@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# React File Explorer (Normalized Data Structure)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive and interactive file explorer component built with React. This application provides a dual-pane interface with a navigation tree on the left and a content grid on the right, allowing for seamless file and folder browsing.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Dual View Interface**: A synchronized tree view in the sidebar and a grid view for the main content.
+- **Folder Navigation**: Navigate through the folder structure by clicking on folders in either view.
+- **Item Selection**: Select any file or folder, with visual feedback in both the tree and grid views.
+- **Breadcrumb Navigation**: Easily track your location and navigate back to parent directories using the breadcrumb trail.
+- **Collapsible Tree**: Expand and collapse folders in the sidebar's tree view to explore the hierarchy.
+- **Centralized State Management**: Built with modern React hooks for efficient and predictable state management.
 
-### `npm start`
+## AI-Assisted Development
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project was developed by **[Devi R](https://www.linkedin.com/in/devi-r-06bb94a7)** in the AI era, exploring the capabilities of pair programming with an AI assistant inside of Cursor. The AI handled tasks from component creation and state management to refactoring and styling.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+A key architectural decision, guided by the AI, was to use a **normalized data structure** instead of a nested tree. All file and folder items are stored in a single flat object, with parent-child relationships managed by IDs. This approach offers several advantages over a traditional tree structure:
 
-### `npm test`
+- **Efficient Lookups**: Finding any item is an `O(1)` operation, making data retrieval fast and simple.
+- **Simplified Updates**: Modifying items is straightforward without the need for complex tree traversal.
+- **State Management**: The flat structure is highly compatible with state management best practices, making the application more scalable and maintainable.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This showcases a modern development workflow where AI not only writes code but also contributes to key architectural decisions.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get a local copy up and running, follow these simple steps.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- Node.js and npm (or yarn)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.  Clone the repo
+    ```sh
+    git clone https://github.com/your_username_/Project-Name.git
+    ```
+2.  Install NPM packages
+    ```sh
+    npm install
+    ```
+3.  Start the development server
+    ```sh
+    npm start
+    ```
