@@ -135,3 +135,25 @@ body {
 .tree-item-children {
   padding-left: 20px;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+    height: 100vh;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    height: auto;
+    max-height: 50vh;
+  }
+
+  body {
+    padding: 0;
+  }
+}
